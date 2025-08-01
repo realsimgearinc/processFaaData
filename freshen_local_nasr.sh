@@ -31,8 +31,9 @@ if [ ! -d "$DOWNLOAD_ROOT_DIR" ]; then
 fi
 
 # get URL for current CIFP edition
-cifp_url=$(./get_current_nasr_url.py)
-
+#cifp_url=$(./get_current_nasr_url.py)
+#cifp_url="https://aeronav.faa.gov/Upload_313-d/cifp/CIFP_250807.zip"
+cifp_url="https://nfdc.faa.gov/webContent/28DaySub/28DaySubscription_Effective_2025-08-07.zip"
 # Update local cifp
 echo "Downloading $cifp_url"
     wget \
